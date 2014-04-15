@@ -1,0 +1,13 @@
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\obj\Debug\Strategy.csprojResolveAssemblyReference.cache
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\Strategy.exe.config
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\Strategy.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\Strategy.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\Common.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\GameRegistry.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\Messages.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\log4net.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\Common.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\GameRegistry.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\bin\Debug\Messages.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\obj\Debug\Strategy.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\Strategy\obj\Debug\Strategy.pdb

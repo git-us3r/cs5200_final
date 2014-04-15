@@ -1,0 +1,13 @@
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\debuggingSpace.exe.config
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\obj\Debug\debuggingSpace.csprojResolveAssemblyReference.cache
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\debuggingSpace.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\debuggingSpace.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\obj\Debug\debuggingSpace.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\obj\Debug\debuggingSpace.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\Common.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\GameRegistry.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\Messages.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\log4net.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\Common.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\GameRegistry.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\debuggingSpace\bin\Debug\Messages.pdb

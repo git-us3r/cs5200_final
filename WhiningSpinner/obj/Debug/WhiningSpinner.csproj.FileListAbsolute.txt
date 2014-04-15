@@ -1,0 +1,5 @@
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\WhiningSpinner\bin\Debug\WhiningSpinner.exe.config
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\WhiningSpinner\bin\Debug\WhiningSpinner.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\WhiningSpinner\bin\Debug\WhiningSpinner.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\WhiningSpinner\obj\Debug\WhiningSpinner.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\WhiningSpinner\obj\Debug\WhiningSpinner.pdb

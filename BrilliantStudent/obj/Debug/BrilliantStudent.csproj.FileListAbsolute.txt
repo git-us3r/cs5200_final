@@ -1,0 +1,5 @@
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\bin\Debug\BrilliantStudent.exe.config
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\bin\Debug\BrilliantStudent.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\bin\Debug\BrilliantStudent.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\obj\Debug\BrilliantStudent.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\obj\Debug\BrilliantStudent.pdb
