@@ -35,6 +35,8 @@ namespace ExcuseGenerator
 
         static void Main(string[] args)
         {
+            // Launch Startup Behavior.
+            ExcuseGenerator ex = new ExcuseGenerator();
         }
     }
 }

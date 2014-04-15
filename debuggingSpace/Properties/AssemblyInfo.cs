@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("debuggingSpace")]
+[assembly: AssemblyTitle("DebuggingSpace")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("debuggingSpace")]
+[assembly: AssemblyProduct("DebuggingSpace")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9667f851-a576-4baf-a2ab-7887d6d8b699")]
+[assembly: Guid("193d9e38-af63-457d-bbf3-067ce65971a6")]
 
 // Version information for an assembly consists of the following four values:
 //

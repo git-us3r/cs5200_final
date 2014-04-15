@@ -113,3 +113,11 @@ Y:\Seafile\USU\Classes\cs5200f14\Homework\InstructorSolution\BSvsZP-Common\Messa
 Y:\Seafile\USU\Classes\cs5200f14\Homework\InstructorSolution\BSvsZP-Common\Messages\obj\Debug\Messages.csprojResolveAssemblyReference.cache
 Y:\Seafile\USU\Classes\cs5200f14\Homework\InstructorSolution\BSvsZP-Common\Messages\obj\Debug\Messages.dll
 Y:\Seafile\USU\Classes\cs5200f14\Homework\InstructorSolution\BSvsZP-Common\Messages\obj\Debug\Messages.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\bin\Debug\Messages.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\bin\Debug\Messages.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\bin\Debug\Common.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\bin\Debug\log4net.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\bin\Debug\Common.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\obj\Debug\Messages.csprojResolveAssemblyReference.cache
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\obj\Debug\Messages.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\Messages\obj\Debug\Messages.pdb

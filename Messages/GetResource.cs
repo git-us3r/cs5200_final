@@ -29,11 +29,6 @@ namespace Messages
             }
         }
 
-
-        //... ( resource )
-        //.. if( resource.GetResourceType == 3
-        // 
-
         public enum PossibleResourceType
         {
             GameConfiguration = 1,

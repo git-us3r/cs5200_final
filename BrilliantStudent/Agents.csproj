@@ -42,25 +42,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agent.cs" />
+    <Compile Include="AgentBrain.cs" />
+    <Compile Include="AgentBrain_BS.cs" />
+    <Compile Include="AgentBrain_EG.cs" />
+    <Compile Include="AgentBrain_Factory.cs" />
+    <Compile Include="AgentBrain_TS.cs" />
     <Compile Include="AgentFactory.cs" />
+    <Compile Include="AgentResourcePool.cs" />
     <Compile Include="BrilliantStudent.cs" />
     <Compile Include="ConversationExecutionStrategy.cs" />
-    <Compile Include="ConversationExecutionStrategy_BrilliantStudent.cs" />
-    <Compile Include="ConversationExecutionStrategy_ExcuseGenerator.cs" />
-    <Compile Include="ConversationExecutionStrategy_TwineSpinner.cs" />
-    <Compile Include="ConversationStrategyFactory.cs" />
+    <Compile Include="ConversationExecutionStrategy_BS.cs" />
+    <Compile Include="ConversationExecutionStrategy_EG.cs" />
+    <Compile Include="ConversationExecutionStrategy_TS.cs" />
+    <Compile Include="ConversationStrategy_Factory.cs" />
     <Compile Include="DummyProgram.cs" />
     <Compile Include="ExcuseGenerator.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="NotificationObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="ResourceManager_BS.cs" />
+    <Compile Include="ResourceManager_EG.cs" />
+    <Compile Include="ResourceManager_Factory.cs" />
+    <Compile Include="ResourceManager_TS.cs" />
     <Compile Include="StateData.cs" />
+    <Compile Include="StateData_Factory.cs" />
+    <Compile Include="StateData_BS.cs" />
+    <Compile Include="StateData_EG.cs" />
+    <Compile Include="StateData_TS.cs" />
     <Compile Include="WhiningSpinner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BSvZP-Common\Common\Common.csproj">
+    <ProjectReference Include="..\Common\Common.csproj">
       <Project>{1ab5119f-befc-4350-aeec-845105a3543c}</Project>
       <Name>Common</Name>
     </ProjectReference>
@@ -72,6 +87,9 @@
       <Project>{126de25a-fb1f-4e0b-9ba3-7072656706b6}</Project>
       <Name>Messages</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

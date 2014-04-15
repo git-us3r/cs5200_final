@@ -14,46 +14,27 @@ namespace CommunicationSubsystem
 {
     public class Communicator
     {
-        public int port { get; set; }
-        public Socket socket { get; set; }
-        private const int MAX_BUFFER_SIZE = 1024;
+        public int localPort { get; set; }
+        public UDPClient socket { get; private set; }
+        //public Socket socket { get; set; }
+        private int MAX_BUFFER_SIZE { get; set; }
 
-        public Communicator(int _port = 0, Socket _socket = null)
+        public Communicator(int _port = 0, int _maxBufferSize = 1024)
         {
-            // 
-            port = _port;
-
-            if (_socket == null)
-            {
-                socket = new Socket(SocketType.Dgram, ProtocolType.Udp);
-                IPAddress localHost = getLocalHost();
-                IPEndPoint ep = new IPEndPoint(localHost, port);
-                socket.Bind(ep);
-                socket.ReceiveTimeout = 100;
-            }
-            else
-            {
-                socket = _socket;
-                socket.ReceiveTimeout = 100;
-            }
-
+            localPort = _port;
+            MAX_BUFFER_SIZE = _maxBufferSize;
+            socket = new UDPClient();
         }
 
         public void send(Envelop env)
         {
-            // 
-            //IPEndPoint localEP = new IPEndPoint(IPAddress.Any, 0);  // let the OS choose the port
-            //Socket localSocket = new Socket(SocketType.Dgram, ProtocolType.Udp);
-            //localSocket.Bind(localEP);
 
             ByteList localByteList = new ByteList();
             env.msg.Encode(localByteList);
             byte[] localByteArray = localByteList.ToBytes();
-
-
-            socket.SendTo(localByteArray, env.endPoint);
-            // localSocket.Close();
-            //Pingo
+            
+            socket.Send(localByteArray, env.endPoint);
+            
 
         }
 
@@ -66,38 +47,33 @@ namespace CommunicationSubsystem
             byte[] localByteArray = localByteList.ToBytes();
 
 
-            socket.SendTo(localByteArray, destinationEndPoint);
+            socket.Send(localByteArray, destinationEndPoint);
         }
 
 
 
         public Envelop receive()
         {
-            //IPEndPoint localEP = new IPEndPoint(IPAddress.Any, this.port);
-            //UdpClient udpClient = new UdpClient(localEP);
-            //Socket socket =  new Socket(SocketType.Dgram, ProtocolType.Udp);
-            //socket.Bind(localEP);
-            byte[] byteArray = new byte[MAX_BUFFER_SIZE];   // wtf!
 
-            try
+            UPDClientEnvelop udpEnv = socket.Receive();
+
+            if (udpEnv != null)
             {
-                socket.Receive(byteArray);
+
+                ByteList byteList = new ByteList();
+                byteList.CopyFromBytes(udpEnv.msg_bytes);       // populate a ByteList object with the contents of byte[]
+
+                Message localMsg = Message.Create(byteList);
+
+                Envelop localEnv = new Envelop(localMsg, udpEnv.remoteEP);
+
+                return localEnv;
+
             }
-            catch (SocketException e)
+            else
             {
-                Console.WriteLine(e.ToString());
-                //Console.Read();
                 return null;
             }
-
-            ByteList byteList = new ByteList();
-            byteList.CopyFromBytes(byteArray);
-
-            Message localMsg = Message.Create(byteList);
-
-            Envelop localEnv = new Envelop(localMsg, socket.LocalEndPoint as IPEndPoint);
-
-            return localEnv;
         }
 
 
@@ -121,7 +97,7 @@ namespace CommunicationSubsystem
                 }
             }
             return IPAddress.Parse(str_localhost);
-
+         
         }
 
     }

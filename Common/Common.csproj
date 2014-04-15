@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackgroundThread.cs" />
     <Compile Include="Bomb.cs" />
     <Compile Include="AgentInfo.cs" />
     <Compile Include="ByteList.cs" />

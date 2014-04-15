@@ -6,7 +6,7 @@ using Common;
 
 namespace Messages
 {
-    class ChangeStrength : Request
+    public class ChangeStrength : Request
     {
         #region Private Properties
         private static Int16 ClassId { get { return (Int16)MESSAGE_CLASS_IDS.ChangeStrength; } }

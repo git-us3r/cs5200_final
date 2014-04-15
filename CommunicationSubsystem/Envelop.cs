@@ -17,11 +17,20 @@ namespace CommunicationSubsystem
     {
         public IPEndPoint endPoint { get; set; }
         public Message msg { get; set; }
+        public byte[] msg_bytes { get; set; }
 
         public Envelop(Message _msg, IPEndPoint _endPoint)
         {
             msg = _msg;
             endPoint = _endPoint;
+        }
+
+
+        // An overloaded ctor to facilitate the job of UDPClient.
+        public Envelop(byte[] _msg_bytes, IPEndPoint _endPoint)
+        {
+            endPoint = _endPoint;
+            msg_bytes = _msg_bytes;
         }
 
     }

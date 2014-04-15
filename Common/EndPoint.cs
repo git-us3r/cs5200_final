@@ -77,8 +77,12 @@ namespace Common
         {
             int result = 0;
             IPAddress[] addressList = Dns.GetHostAddresses(hostname);
-            if (addressList.Length > 0)
-                result = BitConverter.ToInt32(addressList[0].GetAddressBytes(), 0);
+            for (int i = 0; i < addressList.Length; i++ )
+                if (addressList[i].AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    result = BitConverter.ToInt32(addressList[i].GetAddressBytes(), 0);
+                    break;
+                }
             return result;
         }
 
@@ -160,7 +164,8 @@ namespace Common
 
         public IPEndPoint GetIPEndPoint()
         {
-            return new IPEndPoint(Convert.ToInt64(Address), Port);
+            byte[] addressBytes = BitConverter.GetBytes(Address);
+            return new IPEndPoint(new IPAddress(addressBytes), Port);
         }
 
         public static bool Match(EndPoint ep1, EndPoint ep2)

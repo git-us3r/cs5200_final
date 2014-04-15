@@ -15,3 +15,16 @@ C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\bi
 C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\bin\Debug\GameRegistry.pdb
 C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\bin\Debug\Messages.pdb
 C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\BrilliantStudent\bin\Debug\Strategy.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\obj\Debug\Agents.csprojResolveAssemblyReference.cache
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\obj\Debug\BrilliantStudent.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\obj\Debug\BrilliantStudent.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\BrilliantStudent.exe.config
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\BrilliantStudent.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\BrilliantStudent.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\Common.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\CommunicationSubsystem.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\Messages.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\log4net.dll
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\Common.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\CommunicationSubsystem.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\BrilliantStudent\bin\Debug\Messages.pdb

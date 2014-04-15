@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+using Common;
+using Messages;
+using CommunicationSubsystem;
+
 namespace Agents
 {
     /// <summary>
@@ -13,28 +18,36 @@ namespace Agents
     /// </summary>
     public class ExcuseGenerator : Agent
     {
-        // implement IObserver
-        public override void OnCompleted() { }
-        public override void OnError(Exception e) { }
-        public override void OnNext(object data) { }
 
-        // strength points
-        // excuse creation rate
-        // excuse creation acceleration
-        
 
-        // FUNCTIONS
-        
-        // get tick
-        // build excuse
-        // validate request
-        // send excuse
+        public ExcuseGenerator()
+        {
+            // See protected members of Agent.
 
-        // ask game for parameters
-        // get eaten
-        // get destroyed
-        // listen (get message .. midware ?)
-        // reply to request (see options in 4.3.7 )
-        // send status
+            communicator = new Communicator();
+            requestQ = new MessageQ("RQ");
+            conversationsQ = new Conversations();
+            listener = new Listener(ref communicator, ref requestQ, ref conversationsQ);
+
+            doer = new Doer();
+
+            AgentInfo defaultInfo = new AgentInfo(uniqueId, AgentInfo.PossibleAgentType.WhiningSpinner);
+
+            // Needs updating
+            stateData = new StateData_BS(defaultInfo, 1, 1, 1);
+
+            cee = new ConversationExecutionStrategy_TS(communicator.send);
+
+            resourcePool = new AgentResourcePool();
+
+            brain = new AgentBrain_TS();
+
+            resourceManager = new ResourceManager_TS(ref resourcePool, ref stateData);
+
+            listener.Start();
+            doer.Start();
+            brain.Start();
+
+        }
     }
 }

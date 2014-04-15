@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
 
-using CommunicationSubsystem;
+using Common;
+
 
 namespace CommunicationSubsystem
 {
@@ -17,15 +19,19 @@ namespace CommunicationSubsystem
         //public int port { get; set; }
 
         // The listener must have the following associations: (1) comm, (2) messageQ
-        //// Since we don't know yet how to handle the queues, It will have its own for now.
-        //public Listener()
-        //{
-        //    communicator = new Communicator();
-        //    conversations = new Conversations();
-        //    requests = new MessageQ("RQ");
-        //}
+        // Since we don't know yet how to handle the queues, It will have its own for now.
+        public Listener(int _localPort = 0, int _maxBufferSize = 1024)
+        {
+            communicator = new Communicator(_localPort, _maxBufferSize);
+            conversations = new Conversations();
+            requests = new MessageQ("RQ");
+        }
 
 
+
+        // This should be the one used,
+        // since the midware layer elements are technically owned by the agent.
+        ////
         public Listener(ref Communicator comm, ref MessageQ _requests, ref Conversations _conversations)
         {
             communicator = comm;

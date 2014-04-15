@@ -3,29 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-    
+
+using Common;
 
 namespace CommunicationSubsystem
 {
     public class Doer : BackgroundThread
     {
-        private ConversationExecutionStrategy eStrat;
+        //private ConversationExecutionStrategy eStrat;
         private MessageQ requests;
         private Conversations conversations;
 
-        public Doer(ref ConversationExecutionStrategy _eStrat, ref MessageQ _requests, ref Conversations _conversations)
-        {
-            eStrat = _eStrat;
-            requests = _requests;
-            conversations = _conversations;
-        }
+        //public Doer(ref ConversationExecutionStrategy _eStrat, ref MessageQ _requests, ref Conversations _conversations)
+        //{
+        //    eStrat = _eStrat;
+        //    requests = _requests;
+        //    conversations = _conversations;
+        //}
 
         private void work()
         {
             Envelop temp = requests.getMessage();
             if (temp != null)
             {
-                eStrat.process(temp);       // TODO
+                //eStrat.process(temp);       // TODO
             }
 
         }

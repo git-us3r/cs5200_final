@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Agents;
+using Common;
+using Messages;
+using CommunicationSubsystem;
+
 namespace WhiningSpinner
 {
     /// <summary>
@@ -29,6 +34,8 @@ namespace WhiningSpinner
 
         static void Main(string[] args)
         {
+            // Startup behavior.
+            WhiningSpinner sp = new WhiningSpinner();
         }
     }
 }

@@ -4,46 +4,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Common;
+using Messages;
+using CommunicationSubsystem;
+
 namespace Agents
 {
     public class BrilliantStudent : Agent
     {
+        public BrilliantStudent()
+        {
+            // See protected members of Agent.
 
-        // implement IObserver
-        public override void OnCompleted() { }
-        public override void OnError(Exception e) { }
-        public override void OnNext(object data) { }
+            communicator = new Communicator();
+            requestQ = new MessageQ("RQ");
+            conversationsQ = new Conversations();
+            listener = new Listener(ref communicator, ref requestQ, ref conversationsQ);
 
-        // A Brilliant Student agent acts on its own to a) move around the playing field, 
-        // b) gather excuses, c) gather whining twine, d) build bombs, and e) destroy zombies. 
+            doer = new Doer();
 
+            AgentInfo defaultInfo = new AgentInfo(uniqueId, AgentInfo.PossibleAgentType.BrilliantStudent);
 
-        // properties
-        // Strength Points
-        // Sidewalk Speed Factor
-        // Grass speed factor
-        // brain
-        // GameExecutionStrategy
+            // Needs updating
+            stateData = new StateData_BS(defaultInfo, 1, 1, 1);
 
+            cee = new ConversationExecutionStrategy_BS(communicator.send);
 
-        // functions : this are the functions that need to be implemented
-        // in the corresponding execution strategy
+            resourcePool = new AgentResourcePool();
 
-        // ask game for parameters
-        // ask game for playing field
-        // ask game for layout
-        // ask game for zombie data
-        // ask game for other agent's data
-        // gather excuse
-        // gather twine
-        // make bomb
-        // throw bomb   (talk to playing field)
-        // move (talk to game)
-        // talk to student (exchange data)
-        // get eaten
-        // get destroyed
-        // heal
-        // send data
+            brain = new AgentBrain_BS(ref stateData, communicator.send);
+
+            resourceManager = new ResourceManager_BS(ref resourcePool, ref stateData);
+
+            listener.Start();
+            doer.Start();
+            brain.Start();
+
+        }
+
 
     }
 }

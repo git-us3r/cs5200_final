@@ -3,3 +3,8 @@ C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\ExcuseGenerator\bin
 C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\ExcuseGenerator\bin\Debug\ExcuseGenerator.pdb
 C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\ExcuseGenerator\obj\Debug\ExcuseGenerator.exe
 C:\Users\us3r\Documents\GitHub\cs5200_hw4\BSvZP-GameRegistry\ExcuseGenerator\obj\Debug\ExcuseGenerator.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\ExcuseGenerator\bin\Debug\ExcuseGenerator.exe.config
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\ExcuseGenerator\bin\Debug\ExcuseGenerator.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\ExcuseGenerator\bin\Debug\ExcuseGenerator.pdb
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\ExcuseGenerator\obj\Debug\ExcuseGenerator.exe
+C:\Users\us3r\Documents\GitHub\cs5200_hw4\cs5200_hw4_draft2\ExcuseGenerator\obj\Debug\ExcuseGenerator.pdb
